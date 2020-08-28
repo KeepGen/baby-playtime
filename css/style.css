@@ -29,12 +29,12 @@ img {
   padding: 18px;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 14px;
   color: #000000;
-  background-color: #d6b666;
+  background-color: #f4d07a;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -379,6 +379,95 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+body {
+  padding-top: 80px;
+}
+
+.navbar {
+  background-color: #63b6e6;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar__header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  width: 575px;
+}
+
+.navbar__menu_item {
+  list-style-type: none;
+}
+
+.navbar__menu_item_link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__menu_btn {
+  min-width: 190px;
+  height: 40px;
+  padding: 13px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  background-color: #f4d07a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar__menu_mobile_btn {
+  display: none;
+}
+
+.logo__image {
+  min-width: 150px;
+}
+
+.filler {
+  height: 2000px;
 }
 
 @media (max-width: 1200px) {

@@ -1,0 +1,55 @@
+body
+  padding-top: 80px
+.navbar
+  background-color: $primary
+  height: 80px
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  &__header
+    &_menu
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      padding-top: 20px
+      padding-bottom: 20px
+  &__menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    margin: 0
+    width: 575px
+    &_item
+      list-style-type: none
+      &_link
+        font-size: 16px
+        font-weight: 700
+        color: #ffffff
+        text-decoration: none
+    &_btn
+      min-width: 190px
+      height: 40px
+      padding: 13px
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 16px
+      color: $text-color
+      background-color: $button
+      border: none
+      border-radius: 10px
+      cursor: pointer
+      text-align: center
+      text-decoration: none
+  &__menu
+    &_mobile
+      &_btn
+        display: none
+.logo
+  &__image
+    min-width: 150px
+.filler
+  height: 2000px
