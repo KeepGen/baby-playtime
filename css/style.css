@@ -613,6 +613,98 @@ body {
   opacity: 1;
 }
 
+.baby {
+  padding: 60px 0;
+}
+
+.baby__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.baby__main {
+  margin-bottom: 100px;
+}
+
+.baby__title {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.baby__description {
+  width: 560px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.baby__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  lign-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.baby__benefits_one, .baby__benefits_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 290px;
+}
+
+.baby__benefits_image {
+  width: 560px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.baby__benefits_image_main {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.baby__benefits_group_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.baby__benefits_group_text {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
 .setup {
   background-color: #f1f6fb;
   padding-top: 75px;
