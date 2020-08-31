@@ -1,0 +1,85 @@
+.hero
+  background-color: $dark-bg
+  padding: 40px 0
+  &__wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-evenly
+  &__text
+    width: 460px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_description
+      width: 400px
+      font-size: 20px
+      line-height: 30px
+      color: #686666
+      margin-bottom: 70px
+    &_priceold
+      font-size: 24px
+      line-height: 30px
+      font-weight: 600
+      color: #a7a5a5
+      text-decoration: line-through
+    &_pricenew
+      font-size: 20px
+      line-height: 30px
+      font-weight: 700
+      color: #e33443
+      margin-bottom: 30px
+    &_buynow
+      width: 190px
+      font-style: normal
+      font-weight: 700
+      font-size: 16px
+      line-height: 16px
+      color: $text-color
+      text-align: center
+      background-color: $button
+      padding: 13px
+      border-radius: 10px
+      text-decoration: none
+      cursor: pointer
+  &__title
+    font-size: 24px
+    font-weight: 400
+    line-height: 28px
+    margin: 0
+    margin-bottom: 30px
+    &_bold
+      font-weight: 700
+
+.slider
+  width: 430px
+
+.swiper-container
+  width: 430px
+  margin: 10px auto
+
+.swiper-slide-container
+  text-align: center
+  height: 100%
+  max-width: 100%
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+.gallery-top
+  height: 80%
+  width: 100%
+  border-radius: 10px
+    
+.gallery-thumbs
+  height: 60px
+  width: 100%
+
+.gallery-thumbs .swiper-slide
+  width: 60px
+  height: 100%
+  opacity: 0.4
+    
+.gallery-thumbs .swiper-slide-active
+  opacity: 1
