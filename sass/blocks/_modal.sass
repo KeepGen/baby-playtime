@@ -1,0 +1,79 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.6)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.5s
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 300px
+    padding: 48px 40px 40px 40px
+    z-index: 101
+    visibility: hidden
+    background-color: #002d6d
+    opacity: 0
+    transition: opacity 0.5s
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 25px
+    top: 25px
+    text-decoration: none
+    cursor: pointer
+  &__form
+    &_group
+      min-height: 75px
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+  &__title
+    font-size: 18px
+    line-height: 25px
+    font-weight: 700
+    text-align: center
+    margin-top: 0
+    margin-bottom: 15px
+    text-transform: uppercase
+  &__navlist
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    &_ul
+      text-align: center
+      padding: 0
+      margin: 0
+      list-style-type: none
+    &_item
+      margin-bottom: 15px
+    &_link
+      color: #ffffff
+      font-size: 21px
+      text-decoration: none
+  &__copyright
+    margin-top: 20px
+    font-size: 14px
+    color: #ffffff
+    margin-top: 20px
+.close
+  width: 20px
+  height: 20px
+  fill: #ffffff

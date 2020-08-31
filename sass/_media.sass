@@ -1,3 +1,49 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+@media (min-width: 992px) // mobiles hover on--off //
+  .navbar
+    &__menu
+      &_item
+        &_link
+          &:hover
+            text-decoration: underline
+            color: #d0e9f7
+      &_btn
+        &:hover
+          background-color: #e5bf61
+@media (max-width: 992px)
+  body
+    padding-top: 70px
+  .container
+    max-width: 700px
+  .navbar
+    height: 70px
+    &__menu
+      display: none
+      /** &_visible
+       display: flex
+       flex-direction: column
+       align-items: center
+       justify-content: start
+       z-index: 101
+       top: 0
+       left: 0
+       bottom: 0
+       background-color: $primary **/
+      &_btn
+        display: none
+      &_mobile
+        &_btn
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: space-between
+          padding: 0
+@media (max-width: 768px)
+  .container
+    max-width: 95%
+@media (max-width: 576px)
+  .setup
+    &__image
+      width: 95%
