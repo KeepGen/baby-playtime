@@ -1,6 +1,12 @@
 .product
   padding-top: 75px
   padding-bottom: 60px
+  &__wrapper
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
   &__title
     margin-top: 0
     margin-bottom: 105px
@@ -10,6 +16,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    margin-bottom: 50px
   &__image
     &_group
       width: 560px
@@ -44,3 +51,16 @@
       &_item
         width: 100%
         display: flex
+  &__buynow
+    width: 190px
+    font-style: normal
+    font-size: 16px
+    font-weight: 700
+    line-height: 16px
+    color: $text-color
+    text-align: center
+    background-color: $button
+    padding: 13px
+    border-radius: 10px
+    text-decoration: none
+    cursor: pointer

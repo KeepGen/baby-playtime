@@ -791,6 +791,23 @@ body {
   padding-bottom: 60px;
 }
 
+.product__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .product__title {
   margin-top: 0;
   margin-bottom: 105px;
@@ -808,6 +825,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .product__image_group {
@@ -858,6 +876,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.product__buynow {
+  width: 190px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+  background-color: #f4d07a;
+  padding: 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .setup {
@@ -967,19 +1000,21 @@ body {
 }
 
 .whyus__advantages_reverse {
+  width: 992px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: row-reverse !important;
-          flex-direction: row-reverse !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 35px;
 }
 
 .whyus__advantages_item {
@@ -1199,6 +1234,9 @@ body {
     width: 80px;
     height: 65px;
   }
+  .whyus__description {
+    width: 60%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1210,6 +1248,12 @@ body {
     background-color: #e5bf61;
   }
   .hero__text_buynow:hover {
+    background-color: #e5bf61;
+  }
+  .product__buynow:hover {
+    background-color: #e5bf61;
+  }
+  .whyus__buynow:hover {
     background-color: #e5bf61;
   }
 }
@@ -1357,6 +1401,22 @@ body {
     height: 70px;
     margin-right: 10px;
   }
+  .whyus__description {
+    width: 80%;
+  }
+  .whyus__advantages {
+    width: 700px;
+  }
+  .whyus__advantages_item, .whyus__advantages_reverse {
+    width: 700px;
+  }
+  .whyus__advantages_item_image, .whyus__advantages_reverse_image {
+    width: 340px;
+    height: 340px;
+  }
+  .whyus__advantages_item_text, .whyus__advantages_reverse_text {
+    width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1400,6 +1460,22 @@ body {
   }
   .parents__title {
     text-align: center;
+  }
+  .whyus__wrapper {
+    width: 100%;
+  }
+  .whyus__advantages {
+    width: 100%;
+  }
+  .whyus__advantages_item, .whyus__advantages_reverse {
+    width: 100%;
+  }
+  .whyus__advantages_item_image, .whyus__advantages_reverse_image {
+    width: 48%;
+    height: 340px;
+  }
+  .whyus__advantages_item_text, .whyus__advantages_reverse_text {
+    width: 48%;
   }
 }
 
@@ -1448,11 +1524,37 @@ body {
   .swiper-slide-container-image {
     width: 100%;
   }
+  .whyus__advantages_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whyus__advantages_item_title {
+    margin-bottom: 10px;
+  }
+  .whyus__advantages_item_text {
+    width: 90%;
+  }
+  .whyus__advantages_item_image {
+    width: 90%;
+    height: 390px;
+    margin-bottom: 20px;
+  }
+  .whyus__advantages_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
   .parents__images_group {
     width: 100%;
+  }
+  .whyus__advantages_item_image {
+    height: 350px;
   }
 }
 
@@ -1464,6 +1566,9 @@ body {
 
 @media (max-width: 340px) {
   .parents__images_group {
+    height: 300px;
+  }
+  .whyus__advantages_item_image {
     height: 300px;
   }
 }
