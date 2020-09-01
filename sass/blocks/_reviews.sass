@@ -1,0 +1,57 @@
+.reviews
+  padding-top: 100px
+  padding-bottom: 60px
+  background-color: $dark-bg
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    font-size: 24px
+    margin-top: 0
+    margin-bottom: 60px
+  &__group
+    &_wrapper
+      height: 18px
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: start
+      margin-bottom: 10px
+    &_name
+      display: block
+      font-size: 16px
+      margin-bottom: 10px
+    &_stars
+      height: 14px
+      margin-right: 10px
+      display: flex
+      align-items: center
+    &_title
+      font-size: 16px
+      line-height: 16px
+      margin: 0
+    &_text
+      font-size: 16px
+      line-height: 25px
+  &__item
+    width: 625px
+    background-color: #ffffff
+    padding: 25px
+    border-radius: 10px
+    margin-bottom: 50px
+    &:nth-child(2n)
+      margin-left: 70px
+  &__buynow
+    width: 190px
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 16px
+    color: $text-color
+    text-align: center
+    background-color: $button
+    padding: 13px
+    border-radius: 10px
+    text-decoration: none
+    cursor: pointer
