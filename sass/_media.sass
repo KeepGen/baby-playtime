@@ -57,6 +57,12 @@
     &__buynow
       &:hover
         background-color: #e5bf61
+  .footer
+    &__menu
+      &_link
+        &:hover
+          text-decoration: underline
+          opacity: 0.7
 @media (max-width: 992px)
   body
     padding-top: 70px
@@ -163,6 +169,10 @@
           height: 340px
         &_text
           width: 300px
+.footer
+  &__menu
+    &_ul
+      width: 80%
 @media (max-width: 768px)
   .container
     max-width: 95%
@@ -207,6 +217,10 @@
     &__item
       &:nth-child(2n)
         margin-left: 0
+  .footer
+    &__menu
+      &_ul
+        width: 80%
 @media (max-width: 685px)
   .product
     &__texts
@@ -239,6 +253,12 @@
       &_text
         font-size: 14px
         line-height: 22px
+  .footer
+    &__menu
+      &_item
+        margin: 10px 10px
+      &_ul
+        width: 90%
 @media (max-width: 576px)
   .setup
     &__image
@@ -265,8 +285,14 @@
           margin-bottom: 20px
       &_reverse
         flex-direction: column
-      
+  .footer
+    &__menu
+      &_ul
+        width: 340px
 @media (max-width: 480px)
+  .hero
+    &__title
+      text-align: center
   .parents
     &__images
       &_group
@@ -276,6 +302,9 @@
       &_item
         &_image
           height: 350px
+  .setup
+    &__title
+      text-align: center
   .reviews
     &__item
       padding: 12px
@@ -283,11 +312,20 @@
     &__group
       &_stars
         width: 75px
+    &__title
+      text-align: center
 @media (max-width: 420px)
   .parents
     &__images
       &_group
         height: 320px
+  .footer
+    &__menu
+      &_ul
+        width: 300px
+    &__copyright
+      text-align: center
+      line-height: 22px
 @media (max-width: 340px)
   .parents
     &__images

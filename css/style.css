@@ -1178,6 +1178,67 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background-color: #216a94;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__menu_link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.7;
+  margin-top: 40px;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1360,6 +1421,10 @@ body {
   .reviews__buynow:hover {
     background-color: #e5bf61;
   }
+  .footer__menu_link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1523,6 +1588,10 @@ body {
   }
 }
 
+.footer__menu_ul {
+  width: 80%;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 95%;
@@ -1584,6 +1653,9 @@ body {
   .reviews__item:nth-child(2n) {
     margin-left: 0;
   }
+  .footer__menu_ul {
+    width: 80%;
+  }
 }
 
 @media (max-width: 685px) {
@@ -1626,6 +1698,12 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
+  .footer__menu_item {
+    margin: 10px 10px;
+  }
+  .footer__menu_ul {
+    width: 90%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1667,14 +1745,23 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__menu_ul {
+    width: 340px;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero__title {
+    text-align: center;
+  }
   .parents__images_group {
     width: 100%;
   }
   .whyus__advantages_item_image {
     height: 350px;
+  }
+  .setup__title {
+    text-align: center;
   }
   .reviews__item {
     padding: 12px;
@@ -1683,11 +1770,21 @@ body {
   .reviews__group_stars {
     width: 75px;
   }
+  .reviews__title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 420px) {
   .parents__images_group {
     height: 320px;
+  }
+  .footer__menu_ul {
+    width: 300px;
+  }
+  .footer__copyright {
+    text-align: center;
+    line-height: 22px;
   }
 }
 
