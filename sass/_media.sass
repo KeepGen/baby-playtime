@@ -12,6 +12,11 @@
       &_btn
         &:hover
           background-color: #e5bf61
+  .hero
+    &__text
+      &_buynow
+        &:hover
+          background-color: #e5bf61
 @media (max-width: 992px)
   body
     padding-top: 70px
@@ -40,10 +45,45 @@
           align-items: center
           justify-content: space-between
           padding: 0
+  .hero
+    &__wrapper
+      justify-content: space-between
+    &__title
+      margin-bottom: 20px
+    &__text
+      width: 330px
+      &_description
+        width: 100%
+        margin-bottom: 20px
+  .slider
+    width: 350px
+  .swiper-container
+    width: 350px
 @media (max-width: 768px)
   .container
     max-width: 95%
+  .hero
+    &__wrapper
+      flex-direction: column
+    &__text
+      width: 100%
+  .slider
+    width: 500px
+  .swiper-container
+    width: 500px
+  .gallery-thumbs
+    display: none
+  .swiper-slide-container-image
+    width: 100%
 @media (max-width: 576px)
   .setup
     &__image
       width: 95%
+  .slider
+    width: 100%
+  .swiper-container
+    width: 100%
+  .gallery-thumbs
+    display: none
+  .swiper-slide-container-image
+    width: 100%
