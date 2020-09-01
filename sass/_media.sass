@@ -1,6 +1,14 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .baby
+    &__main
+      margin-bottom: 50px
+    &__benefits
+      &_image
+        width: 460px
+      &_one, &_two
+        width: 250px
 @media (min-width: 992px) // mobiles hover on--off //
   .navbar
     &__menu
@@ -59,6 +67,25 @@
     width: 350px
   .swiper-container
     width: 350px
+  .baby
+    &__title
+      margin-bottom: 10px
+    &__main
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 30px
+    &__benefits
+      &_one, &_two
+        display: none
+      &_image
+        width: 100%
+        padding: 0
+        &_main
+          display: none
+        &_mobile
+          display: block
+          width: 100%
 @media (max-width: 768px)
   .container
     max-width: 95%
@@ -75,6 +102,9 @@
     display: none
   .swiper-slide-container-image
     width: 100%
+  .baby
+    &__description
+      width: 100%
 @media (max-width: 576px)
   .setup
     &__image
