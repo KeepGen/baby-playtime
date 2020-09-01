@@ -1178,6 +1178,70 @@ body {
   cursor: pointer;
 }
 
+.faq {
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.ready {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  background-color: #f1f6fb;
+}
+
+.ready__wrapper {
+  width: 370px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.ready__title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 75px;
+}
+
+.ready__buynow {
+  width: 190px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+  background-color: #f4d07a;
+  padding: 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  width: 45px;
+  top: 35px;
+  left: 20px;
+}
+
+.arrowmini {
+  display: none;
+  position: absolute;
+  width: 45px;
+  top: 20px;
+  left: 175px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 45px;
@@ -1421,6 +1485,9 @@ body {
   .reviews__buynow:hover {
     background-color: #e5bf61;
   }
+  .ready__buynow:hover {
+    background-color: #e5bf61;
+  }
   .footer__menu_link:hover {
     text-decoration: underline;
     opacity: 0.7;
@@ -1586,10 +1653,15 @@ body {
   .whyus__advantages_item_text, .whyus__advantages_reverse_text {
     width: 300px;
   }
-}
-
-.footer__menu_ul {
-  width: 80%;
+  .arrow {
+    display: none;
+  }
+  .arrowmini {
+    display: block;
+  }
+  .footer__menu_ul {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1778,6 +1850,13 @@ body {
 @media (max-width: 420px) {
   .parents__images_group {
     height: 320px;
+  }
+  .ready__wrapper {
+    width: 300px;
+  }
+  .arrowmini {
+    top: 45px;
+    left: 145px;
   }
   .footer__menu_ul {
     width: 300px;
