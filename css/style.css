@@ -1618,6 +1618,9 @@ body {
             justify-content: space-between;
     padding: 0;
   }
+  .logo__image {
+    margin-top: 10px;
+  }
   .hero__wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
