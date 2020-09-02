@@ -57,6 +57,9 @@
     &__buynow
       &:hover
         background-color: #e5bf61
+  .accordion-header
+    &:hover
+      background: rgba(0, 0, 0, 0.05)
   .ready
     &__buynow
       &:hover
@@ -173,6 +176,8 @@
           height: 340px
         &_text
           width: 300px
+  .accordion
+    width: 700px
   .arrow
     display: none
   .arrowmini
@@ -225,6 +230,8 @@
     &__item
       &:nth-child(2n)
         margin-left: 0
+  .accordion
+    width: 100%
   .footer
     &__menu
       &_ul
@@ -299,21 +306,48 @@
         width: 340px
 @media (max-width: 480px)
   .hero
+    padding-top: 0
     &__title
       text-align: center
+  .baby
+    padding-top: 30px
   .parents
+    padding-top: 30px
     &__images
       &_group
         width: 100%
-  .whyus
+  .product
+    padding-top: 30px
     &__advantages
+      margin-bottom: 0
+  .whyus
+    padding-top: 30px
+    &__advantages
+      margin-bottom: 0px
       &_item
         &_image
           height: 350px
+        &_title
+          text-align: center
+          line-height: 26px
+        &_description
+          font-size: 16px
+          line-height: 23px
+    &__slogan
+      margin-bottom: 20px
+    &__description
+      font-size: 16px
+      line-height: 23px
+      margin-bottom: 30px
+      width: 100%
   .setup
+    padding-top: 30px
     &__title
       text-align: center
   .reviews
+    padding-top: 30px
+    &__title
+      margin-bottom: 30px
     &__item
       padding: 12px
       margin-bottom: 30px
@@ -322,6 +356,13 @@
         width: 75px
     &__title
       text-align: center
+  .faq
+    padding-top: 30px
+    padding-bottom: 30px
+    &__title
+      margin-bottom: 10px
+  .ready
+    padding-top: 30px
 @media (max-width: 420px)
   .parents
     &__images
@@ -340,6 +381,9 @@
     &__copyright
       text-align: center
       line-height: 22px
+@media (max-width: 350px)
+  .accordion-header, .accordion-body
+    font-size: 14px
 @media (max-width: 340px)
   .parents
     &__images

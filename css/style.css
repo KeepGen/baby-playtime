@@ -409,8 +409,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navbar__menu {
@@ -443,20 +443,20 @@ body {
 }
 
 .navbar__menu_btn {
-  min-width: 190px;
-  height: 40px;
-  padding: 13px;
+  width: 190px;
+  height: 50px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   color: #000000;
-  background-color: #f4d07a;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
   text-align: center;
+  border: 1px solid #d6b666;
+  background-color: #f4d07a;
+  padding: 13px;
+  border-radius: 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar__menu_mobile_btn {
@@ -542,12 +542,14 @@ body {
 
 .hero__text_buynow {
   width: 190px;
+  height: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
+  border: 1px solid #d6b666;
   background-color: #f4d07a;
   padding: 13px;
   border-radius: 10px;
@@ -743,7 +745,7 @@ body {
 
 .parents__title {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 25px;
@@ -880,12 +882,14 @@ body {
 
 .product__buynow {
   width: 190px;
+  height: 50px;
   font-style: normal;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
+  border: 1px solid #d6b666;
   background-color: #f4d07a;
   padding: 13px;
   border-radius: 10px;
@@ -1067,12 +1071,14 @@ body {
 
 .whyus__buynow {
   width: 190px;
+  height: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
+  border: 1px solid #d6b666;
   background-color: #f4d07a;
   padding: 13px;
   border-radius: 10px;
@@ -1165,12 +1171,14 @@ body {
 
 .reviews__buynow {
   width: 190px;
+  height: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
+  border: 1px solid #d6b666;
   background-color: #f4d07a;
   padding: 13px;
   border-radius: 10px;
@@ -1179,8 +1187,8 @@ body {
 }
 
 .faq {
-  padding-top: 75px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 75px;
 }
 
 .faq__wrapper {
@@ -1194,6 +1202,62 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.accordion {
+  width: 750px;
+  list-style: none;
+  padding-left: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  background: #f1f6fb;
+  border-bottom: 1px solid #ddd;
+  padding: 14px 40px 14px 20px;
+  cursor: pointer;
+}
+
+.accordion-header:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23b3b2b2;" /></svg>');
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.accordion-header.active:after {
+  -webkit-transform: translateY(-50%) rotate(0.5turn);
+          transform: translateY(-50%) rotate(0.5turn);
+}
+
+.accordion-body {
+  display: none;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #747474;
+  padding: 14px 40px 14px 20px;
 }
 
 .ready {
@@ -1227,12 +1291,14 @@ body {
 
 .ready__buynow {
   width: 190px;
+  height: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
+  border: 1px solid #d6b666;
   background-color: #f4d07a;
   padding: 13px;
   border-radius: 10px;
@@ -1498,6 +1564,9 @@ body {
   .reviews__buynow:hover {
     background-color: #e5bf61;
   }
+  .accordion-header:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
   .ready__buynow:hover {
     background-color: #e5bf61;
   }
@@ -1666,6 +1735,9 @@ body {
   .whyus__advantages_item_text, .whyus__advantages_reverse_text {
     width: 300px;
   }
+  .accordion {
+    width: 700px;
+  }
   .arrow {
     display: none;
   }
@@ -1737,6 +1809,9 @@ body {
   }
   .reviews__item:nth-child(2n) {
     margin-left: 0;
+  }
+  .accordion {
+    width: 100%;
   }
   .footer__menu_ul {
     width: 80%;
@@ -1836,17 +1911,64 @@ body {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 0;
+  }
   .hero__title {
     text-align: center;
+  }
+  .baby {
+    padding-top: 30px;
+  }
+  .parents {
+    padding-top: 30px;
   }
   .parents__images_group {
     width: 100%;
   }
+  .product {
+    padding-top: 30px;
+  }
+  .product__advantages {
+    margin-bottom: 0;
+  }
+  .whyus {
+    padding-top: 30px;
+  }
+  .whyus__advantages {
+    margin-bottom: 0px;
+  }
   .whyus__advantages_item_image {
     height: 350px;
   }
+  .whyus__advantages_item_title {
+    text-align: center;
+    line-height: 26px;
+  }
+  .whyus__advantages_item_description {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .whyus__slogan {
+    margin-bottom: 20px;
+  }
+  .whyus__description {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .setup {
+    padding-top: 30px;
+  }
   .setup__title {
     text-align: center;
+  }
+  .reviews {
+    padding-top: 30px;
+  }
+  .reviews__title {
+    margin-bottom: 30px;
   }
   .reviews__item {
     padding: 12px;
@@ -1857,6 +1979,16 @@ body {
   }
   .reviews__title {
     text-align: center;
+  }
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .faq__title {
+    margin-bottom: 10px;
+  }
+  .ready {
+    padding-top: 30px;
   }
 }
 
@@ -1877,6 +2009,12 @@ body {
   .footer__copyright {
     text-align: center;
     line-height: 22px;
+  }
+}
+
+@media (max-width: 350px) {
+  .accordion-header, .accordion-body {
+    font-size: 14px;
   }
 }
 
