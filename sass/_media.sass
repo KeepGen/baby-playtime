@@ -197,6 +197,8 @@
       flex-direction: column
     &__text
       width: 100%
+      &_description
+        text-align: center
   .slider
     width: 500px
   .swiper-container
@@ -306,7 +308,7 @@
   .footer
     &__menu
       &_ul
-        width: 340px
+        width: 100%
 @media (max-width: 480px)
   .hero
     padding-top: 0
@@ -366,6 +368,11 @@
       margin-bottom: 10px
   .ready
     padding-top: 30px
+@media (max-width: 433px)
+  .footer
+    &__menu
+      &_ul
+        width: 290px
 @media (max-width: 420px)
   .parents
     &__images
@@ -378,9 +385,6 @@
     top: 45px
     left: 145px
   .footer
-    &__menu
-      &_ul
-        width: 300px
     &__copyright
       text-align: center
       line-height: 22px

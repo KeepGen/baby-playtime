@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #ffffff;
@@ -36,6 +40,21 @@ img {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.totop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  -webkit-box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+          box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+}
+
+.icontotop {
+  display: block;
+  visibility: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1376,7 +1395,7 @@ body {
 .footer__copyright {
   color: #ffffff;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   opacity: 0.7;
   margin-top: 40px;
@@ -1765,6 +1784,9 @@ body {
   .hero__text {
     width: 100%;
   }
+  .hero__text_description {
+    text-align: center;
+  }
   .slider {
     width: 500px;
   }
@@ -1909,7 +1931,7 @@ body {
             flex-direction: column;
   }
   .footer__menu_ul {
-    width: 340px;
+    width: 100%;
   }
 }
 
@@ -1995,6 +2017,12 @@ body {
   }
 }
 
+@media (max-width: 433px) {
+  .footer__menu_ul {
+    width: 290px;
+  }
+}
+
 @media (max-width: 420px) {
   .parents__images_group {
     height: 320px;
@@ -2005,9 +2033,6 @@ body {
   .arrowmini {
     top: 45px;
     left: 145px;
-  }
-  .footer__menu_ul {
-    width: 300px;
   }
   .footer__copyright {
     text-align: center;

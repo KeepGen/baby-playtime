@@ -73,4 +73,13 @@ $(document).ready(function () {
 
   header.click(accordion);
 
+
+  // Show/Hide the button
+  window.onscroll = function () {
+    var pageOffset = document.documentElement.scrollTop || document.body.scrollTop,
+      btn = document.getElementById('totop');
+    if (btn) btn.style.visibility = pageOffset > 450 ? 'visible' : 'hidden';
+  };
+
+
 });
